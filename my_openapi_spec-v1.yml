@@ -1,0 +1,304 @@
+---
+openapi: 3.0.1
+info:
+  title: BizSolo
+  version:
+  description:
+servers:
+- url: http://localhost:3000
+paths:
+  "/api/v1/auth/sign_in":
+    post:
+      description: Login A Staff
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+  "/api/v1/auth":
+    post:
+      description: Signup A New Staff
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+  "/api/v1/staff/profile":
+    get:
+      description: Reactivate A Staff
+      parameters: []
+      requestBody: {}
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+  "/api/v1/bizs":
+    post:
+      description: Create Biz
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+  "/api/v1/bizs/1":
+    patch:
+      description: Update Biz
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    get:
+      description: Get Biz
+      parameters: []
+      requestBody: {}
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+  "/api/v1/bizs/2":
+    delete:
+      description: Cancel Biz
+      parameters: []
+      requestBody: {}
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+  "/api/v1/events":
+    post:
+      description: Create Event
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+  "/api/v1/events/1":
+    patch:
+      description: Update Event
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    get:
+      description: Get Event
+      parameters: []
+      requestBody: {}
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+  "/api/v1/events/3":
+    delete:
+      description: Cancel Event
+      parameters: []
+      requestBody: {}
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+  "/api/v1/users":
+    post:
+      description: Create User
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    get:
+      description: Get Users
+      parameters: []
+      requestBody: {}
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+  "/api/v1/users/7":
+    patch:
+      description: Update User
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+  "/api/v1/users/1/guardians":
+    post:
+      description: Create or Update Guardians
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    get:
+      description: Get Guardians
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+  "/api/v1/users/1":
+    delete:
+      description: Delete User
+      parameters: []
+      requestBody: {}
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    get:
+      description: Get User
+      parameters: []
+      requestBody: {}
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+  "/api/v1/user_auth/sign_in":
+    post:
+      description: Login A User
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+  "/api/v1/user_auth":
+    post:
+      description: Signup A New User
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+  "/api/v1/user/profile":
+    get:
+      description: Get Current User Profile
+      parameters: []
+      requestBody: {}
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
